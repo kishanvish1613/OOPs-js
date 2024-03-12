@@ -15,6 +15,9 @@ function BankAccount (customerName, balance) {
 const ramJiAccount = new BankAccount('Ram ji', 1000);
 console.log(ramJiAccount);
 
+const krishnaJiAccount = new BankAccount('krishna ji', 10);
+console.log(krishnaJiAccount);
+
 ramJiAccount.deposit(500);
 console.log(ramJiAccount);
 
@@ -24,3 +27,5 @@ console.log(ramJiAccount);
 // In this example, BankAccount is a constructor function that defines properties (customerName and balance with accountNumber) and two method (deposit, withdraw) for a BankAccount object. When you create a new instance of a BankAccount object using new BankAccount(...), the this keyword inside the constructor function refers to the newly created object.
 
 // Constructor functions are useful for creating multiple instances of similar objects with shared behavior and properties. They are a fundamental concept in JavaScript's object-oriented programming paradigm.
+
+// 'in this example we are consuming extra memory space for every new object'
